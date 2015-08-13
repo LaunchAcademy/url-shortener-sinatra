@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Short URL</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% urls.each do |url| %>
+      <tr>
+        <td><%= url["short_url"] %></td>
+        <td><%= url["long_url"] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
