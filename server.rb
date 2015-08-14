@@ -29,7 +29,6 @@ get "/urls/new" do
 end
 
 post "/urls" do
-  binding.pry
   long_url = params["long_url"]
   short_url = generate_short_url
 
